@@ -22,3 +22,4 @@ const decrement = () => {
 };
 incrementBtnEl.addEventListener('click', increment);
 decrementBtnEl.addEventListener('click', decrement);
+

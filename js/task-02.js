@@ -7,36 +7,21 @@ const ingredients = [
   'Condiments',
 ];
 
-// const ulEl = document.querySelector('#ingredients');
-// console.log(ulEl);
-// const elements = [];
-// for (let i = 0; i < ingredients.length; i+=1) {
-//   const element = ingredients[i];
-
-//   // console.log(ingredients[i]);
-
-//   const itemEl = document.createElement('li');
-// // console.log(itemEl);
-// itemEl.textContent = ingredients[i];
-//   itemEl.classList.add('item');
-//   elements.push(itemEl);
- 
-// }
-
-// console.log(elements);
-
-
-
-
-
-
 
 const ulEl = document.querySelector('#ingredients');
+// console.log(ulEl);
+
+const elements = [];
+for (let i = 0; i < ingredients.length; i += 1) {
+  const element = ingredients[i];
+  // console.log(ingredients[i])
 
 
-const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
- 
-ulEl.innerHTML = list;
+  const itemEl = document.createElement('li');
+  itemEl.textContent = ingredients[i]
+  // console.log(itemEl);
+
+  ulEl.append(itemEl)
+}
 
 console.log(ulEl);
-
