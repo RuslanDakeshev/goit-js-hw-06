@@ -13,13 +13,25 @@ const increment = () => {
   counterValue += 1;
 
   document.getElementById('value').textContent = counterValue;
+
+  valueEl.textContent = counterValue;
+
+  console.log('counterValue', counterValue);
 };
 
 const decrement = () => {
   counterValue -= 1;
 
   document.getElementById('value').textContent = counterValue;
+
+  valueEl.textContent = counterValue;
+
+ console.log('counterValue', counterValue);
 };
 incrementBtnEl.addEventListener('click', increment);
 decrementBtnEl.addEventListener('click', decrement);
+
+
+
+
 

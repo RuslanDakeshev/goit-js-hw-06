@@ -21,4 +21,5 @@ console.log(imagesEl);
 ul.insertAdjacentHTML('afterbegin', imagesEl)
 
 ul.style.textAlign = "center";
+
 ul.style.backgroundColor = "teal";
