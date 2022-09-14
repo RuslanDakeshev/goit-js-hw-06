@@ -10,7 +10,7 @@ const nameColor = document.querySelector('.color')
 
 function onColor(event) {
   document.body.style.backgroundColor=getRandomHexColor()
-  nameColor.textContent = getRandomHexColor()
+  nameColor.textContent = document.body.style.backgroundColor=getRandomHexColor()
 }
 
 
